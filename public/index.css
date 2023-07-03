@@ -1,0 +1,135 @@
+.nav{
+    display: grid;
+    grid-template-columns: 55px 48px 100px;
+    grid-template-rows: 48px;
+    padding-bottom: 8px;
+    box-shadow: inset 0 -1px 0 0 #dadce0;
+}
+.name{
+    color: #5f6368;
+    opacity: 1;
+    font-family: "Product Sans",Arial,sans-serif;
+    padding: 12px 0px 0px 0px;
+    font-size: 22px;
+}
+img{
+    padding-top: 3px;
+    width: 40px;
+    height: 40px;
+}
+.menu{
+    color: #5f6368;
+    opacity: 1;
+    font-family: "Product Sans",Arial,sans-serif;
+    padding: 12px;
+}
+.menu:hover{
+    border-radius: 50%;
+    background-color: #e4e4e4;
+}
+.content{
+    display: grid;
+    grid-template-columns: 0.024fr 1.976fr;
+    grid-template-rows: 545px;
+}
+.notes{
+    padding-left: 210px;
+}
+ul{
+    list-style-type: none;
+    padding: 0px 18px;
+}
+
+li{
+    padding: 15px;
+}
+li:hover{
+    border-radius: 50%;
+    background-color: #e4e4e4;
+}
+.list{
+    color: #5f6368;
+    opacity: 1;
+    font-family: "Product Sans",Arial,sans-serif;
+    box-shadow: inset 0 0 0 1px #dadce0;
+}
+.contentondetail{
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-rows: 545px;
+}
+.detail{
+    color: #202124;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: .870rem;
+    padding: 15px;
+}
+.listdetail{
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: repeat(3, 52px);
+    color: #5f6368;
+    opacity: 1;
+    font-family: "Product Sans",Arial,sans-serif;
+    box-shadow: inset 0 0 0 1px #dadce0;
+}
+.button-detail{
+    padding-top: 15px;
+    padding-left: 30px;
+}
+.button-detail:hover{
+    border-radius: 0 12rem 12rem 0;
+    background-color: #e4e4e4;
+}
+
+
+form.create-note {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 15px 180px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    min-height: 10px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+  form.create-note input,
+  form.create-note textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+  }
+  .add {
+    position: absolute;
+    right: 18px;
+    bottom: -12px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+  }
+  .save{
+    width: 200px;
+    height: auto;
+    padding-left: 15px ;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+  }
+
+
+  .property1{
+    padding-left: 150px;
+  }

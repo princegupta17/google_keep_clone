@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.png";
+import MenuIcon from "@mui/icons-material/Menu";
+import Menudetail from "./Menudetail";
+import Without from "./Without";
 
 function App() {
+  const [menu, setcount] = useState(false);
+  function give() {
+    setcount((menu) => !menu);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="nav">
+        <MenuIcon className="menu" onClick={give}/>
+        <img src={logo} alt="logo"></img>
+        <span className="name">Keep</span>
+      </div>
+      <div>{menu === true ? <Menudetail /> : <Without />}</div>
     </div>
   );
 }
