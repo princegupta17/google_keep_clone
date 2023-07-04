@@ -3,7 +3,7 @@ import { archivearray } from "./Main";
 import Archivebox from "./archivebox";
 function Archive(){
     return (
-        <div>
+        <div className="grid">
             {archivearray.map((deleteitem, index) => {
                 return (
                     <Archivebox 

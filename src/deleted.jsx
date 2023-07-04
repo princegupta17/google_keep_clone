@@ -3,7 +3,7 @@ import { deletearray } from "./Main";
 import Deletebox from "./deletebox";
 function Deleted(){
     return (
-        <div>
+        <div className="grid">
             {deletearray.map((deleteitem, index) => {
                 return (
                     <Deletebox 

@@ -33,7 +33,7 @@ img{
     grid-template-rows: 545px;
 }
 .notes{
-    padding-left: 210px;
+    margin: 15px auto auto auto;
 }
 ul{
     list-style-type: none;
@@ -86,15 +86,19 @@ li:hover{
 form.create-note {
     position: relative;
     width: 480px;
-    margin: 30px auto 15px 180px;
+    margin: 30px auto 50px auto;
     background: #fff;
     padding: 15px;
     border-radius: 7px;
     min-height: 10px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
-  }
-  form.create-note input,
-  form.create-note textarea {
+    @media only screen and (max-width: 900px){
+        width: 330px;
+    }
+
+}
+form.create-note input,
+form.create-note textarea {
     width: 100%;
     border: none;
     padding: 4px;
@@ -102,8 +106,8 @@ form.create-note {
     font-size: 1.2em;
     font-family: inherit;
     resize: none;
-  }
-  .add {
+}
+.add {
     position: absolute;
     right: 18px;
     bottom: -12px;
@@ -116,8 +120,8 @@ form.create-note {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     outline: none;
-  }
-  .save{
+}
+.save{
     width: 200px;
     height: auto;
     padding-left: 15px ;
@@ -127,9 +131,40 @@ form.create-note {
     overflow: hidden;
     position: relative;
     border-radius: 8px;
-  }
+    @media only screen and (max-width: 900px){
+        width: 160px;
+    }
+    @media only screen and (min-width: 900px) and (max-width: 1260px ){
+        width: 200px;
+    }
+    
+
+}
 
 
-  .property1{
+.property1{
     padding-left: 150px;
-  }
+
+    @media only screen and (max-width: 900px){
+        padding-left: 110px;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-auto-rows: 150px;
+    grid-gap: 20px;
+    
+
+    @media only screen and (max-width: 650px){
+        grid-template-columns: repeat(2, 180px);
+        grid-gap: 0px;
+    }
+    @media only screen and (min-width: 650px) and (max-width: 900px ){
+        grid-template-columns: repeat(3, 180px);
+    }
+    @media only screen and (min-width: 900px) and (max-width: 1260px ){
+        grid-template-columns: repeat(3, 220px);
+    }
+}

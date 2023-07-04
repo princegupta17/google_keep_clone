@@ -49,16 +49,18 @@ function Main(){
                 </form>
             </div>
             </ClickAwayListener>
-            {notesarray.map((notearray, index) => {
-                return (
-                    <Save
-                        key={index}
-                        id={index}
-                        title={notearray.title}
-                        content={notearray.content}
-                    />
-                );
-            })}
+            <div className="grid">
+                {notesarray.map((notearray, index) => {
+                    return (
+                        <Save
+                            key={index}
+                            id={index}
+                            title={notearray.title}
+                            content={notearray.content}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
     
