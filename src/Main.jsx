@@ -26,9 +26,14 @@ function Main(){
             }
         });
     }
+    
     function submit(){
         setnotes(prevNotes => {
             return [notes, ...prevNotes];
+        });
+        setTitle({
+            title: "",
+            content: ""
         });
     }
     const[shownote, setnote]=useState(false);
@@ -44,7 +49,7 @@ function Main(){
             <div>
                 <form className="create-note">
                     {shownote && <input name="title" placeholder="Title" value={notes.title} onChange = {inserting}/>}
-                    <textarea name="content" placeholder="Take a note..." value={notes.content} onChange={inserting} onClick = {Showthis}/>
+                    <textarea id="my-content" name="content" placeholder="Take a note..." value={notes.content} onChange={inserting} onClick = {Showthis}/>
                     <AddIcon onClick={submit} className="add"/>
                 </form>
             </div>
